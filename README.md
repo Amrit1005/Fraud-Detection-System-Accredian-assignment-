@@ -16,49 +16,51 @@ Technology Stack
 
 Installation
 
-1. Clone this repository:
+Clone this repository:
 
-```
+```sh
 git clone https://github.com/your-username/fraud-detection-system.git
 cd fraud-detection-system
 ```
 
-2. Install required dependencies: It’s recommended to use a virtual environment:
+Install required dependencies using a virtual environment:
 
-```
+```sh
 python3 -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-If a requirements.txt is missing, install core dependencies manually:
+If `requirements.txt` is missing, install core dependencies manually:
 
-```
+```sh
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
-3. Dataset: Place fraud.csv in the project directory. Ensure correct format/columns based on project code.
+Place the dataset `fraud.csv` in the project directory.
 
 Usage
 
-- The main code is provided as a Jupyter notebook (code.ipynb):
-  1. Launch JupyterLab or Jupyter Notebook:
+The main code is provided as a Jupyter notebook (`fraud_detect.ipynb`).
 
-```
+To run the notebook:
+
+```sh
 jupyter lab
 ```
 or
 
-```
+```sh
 jupyter notebook
 ```
 
-  2. Open code.ipynb and run all cells to execute the workflow: data load, preprocessing, visualization (outlier detection), and classification modeling.
+Then open `fraud_detect.ipynb` and run all cells to execute the full workflow: loading data, preprocessing, visualizing outliers, and classification modeling.
 
-- Example on CLI (if notebook is converted to a script):
+If running the notebook as a script after conversion:
 
-```
-python code.py
+```sh
+jupyter nbconvert --to script fraud_detect.ipynb
+python fraud_detect.py
 ```
 
 Features
@@ -75,5 +77,4 @@ Results
 - Achieves high precision and F1 on large, realistic datasets (Accuracy >99%, F1 >88%).
 
 Author
-
-- Amritanshu Kumar
+  ## Amritanshu Kumar ##
