@@ -77,4 +77,4 @@ Results
 - Achieves high precision and F1 on large, realistic datasets (Accuracy >99%, F1 >88%).
 
 Author
-  ## Amritanshu Kumar ##
+   Amritanshu Kumar
